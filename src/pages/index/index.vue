@@ -1,22 +1,24 @@
 <template>
   <div class="container">
-    <div class="banner"></div>
+    <nav-bar></nav-bar>
+    <banner></banner>
   </div>
 </template>
 
 <script>
-  export default {
-    name: "index"
+import Banner from "./component/banner";
+import NavBar from "./component/nav-bar";
+export default {
+  name: "index",
+  components: {
+    banner: Banner,
+    "nav-bar": NavBar
   }
+};
 </script>
 
 <style lang="less" scoped>
-  .container {
-    height: 100%;
-
-    .banner {
-      height: 200px;
-      background: aqua;
-    }
-  }
+.container {
+  padding-top: 96px;
+}
 </style>

@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import 'lib-flexible/flexible'
 import axios from './../utils/request'
-
+import './../static/iconfont/iconfont.css'
 
 axios.defaults.withCredentials = true;
 Vue.prototype.axios = axios;
