@@ -40,9 +40,11 @@ export default {
       new Swiper(".banner", {
         autoplay: true,
         loop: true,
-        Observer: true,
         pagination: {
-          el: ".swiper-pagination"
+          el: ".swiper-pagination",
+          clickable: true,
+          bulletClass: "normal",
+          bulletActiveClass: "focus"
         }
       });
     }
@@ -66,6 +68,20 @@ export default {
         height: 100%;
       }
     }
+  }
+  /deep/.normal {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+  /deep/.focus {
+    width: 64px;
+    height: 12px;
+    background: #ff734c;
+    border-radius: 12px;
   }
 }
 </style>
