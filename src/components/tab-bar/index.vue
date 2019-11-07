@@ -19,17 +19,17 @@ export default {
           path:'Index'
         },
         {
-          icon: "&#xe601;",
+          icon: "&#xe684;",
           text: "分类",
           path: 'Classify'
         },
         {
-          icon: "&#xe605;",
+          icon: "&#xe611;",
           text: "购物车",
           path: 'Carts'
         },
         {
-          icon: "&#xe627;",
+          icon: "&#xe63f;",
           text: "我的",
           path: 'Mine'
         }
