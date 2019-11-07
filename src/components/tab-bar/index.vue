@@ -41,6 +41,7 @@ export default {
 
 <style lang="less" scoped>
 .tab-bar {
+  background: #F7F9FA;
   width: 100%;
   height: 84px;
   bottom: 0;

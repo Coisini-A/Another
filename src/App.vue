@@ -6,11 +6,11 @@
 </template>
 
 <script>
-import TabBar from '@/components/tab-bar'
+import TabBar from "@/components/tab-bar";
 export default {
   name: "App",
   components: {
-    "tab-bar": TabBar,
+    "tab-bar": TabBar
   }
 };
 </script>
@@ -18,6 +18,7 @@ export default {
 <style lang="less" scoped>
 #app {
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 </style>

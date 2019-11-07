@@ -21,7 +21,6 @@ export default {
     .nav-bar{
         width: 100%;
         height:96px;
-        position: fixed;
         display:flex;
         justify-content:space-between;
         align-items:center;

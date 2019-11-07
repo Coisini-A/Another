@@ -4,8 +4,7 @@
     <banner></banner>
     <honor></honor>
     <procate></procate>
-    <modetitle></modetitle>
-    <scene-list></scene-list>
+    <scene></scene>
   </div>
 </template>
 
@@ -14,8 +13,7 @@ import Banner from "./component/banner";
 import NavBar from "./component/nav-bar";
 import Honor from "./component/honor";
 import Procate from "./component/procate";
-import Modetitle from "./component/scene/modetitle";
-import SceneList from "./component/scene/scene-list"
+import Scene from "./component/scene";
 export default {
   name: "index",
   components: {
@@ -23,14 +21,10 @@ export default {
     "nav-bar": NavBar,
     honor: Honor,
     procate:Procate,
-    modetitle:Modetitle,
-    "scene-list":SceneList
+    scene:Scene
   }
 };
 </script>
 
 <style lang="less" scoped>
-.container {
-  padding-top: 96px;
-}
 </style>
