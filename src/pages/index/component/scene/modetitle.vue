@@ -27,7 +27,7 @@ export default {
 <style lang="less" scoped>
   .modetitle-item{
       font-size:32px;
-      padding:10px;
+      padding: 0.3rem 0.1rem;
   }
   .iconfont{
       font-size:35px;

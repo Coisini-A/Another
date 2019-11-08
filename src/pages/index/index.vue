@@ -5,6 +5,7 @@
     <honor></honor>
     <procate></procate>
     <scene></scene>
+    <product></product>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import NavBar from "./component/nav-bar";
 import Honor from "./component/honor";
 import Procate from "./component/procate";
 import Scene from "./component/scene";
+import Product from "./component/product";
 export default {
   name: "index",
   components: {
@@ -21,7 +23,8 @@ export default {
     "nav-bar": NavBar,
     honor: Honor,
     procate:Procate,
-    scene:Scene
+    scene:Scene,
+    Product:Product,
   }
 };
 </script>
