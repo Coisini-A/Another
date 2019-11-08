@@ -22,12 +22,15 @@ export default {
     banner: Banner,
     "nav-bar": NavBar,
     honor: Honor,
-    procate:Procate,
-    scene:Scene,
-    Product:Product,
+    procate: Procate,
+    scene: Scene,
+    Product: Product
   }
 };
 </script>
 
 <style lang="less" scoped>
+.container {
+  padding-bottom: 84px;
+}
 </style>

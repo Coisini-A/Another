@@ -20,7 +20,7 @@ export default {
 
 <style lang="less" scoped>
 .product-title {
-    font-size:30px;
+    font-size:32px;
     padding:30px 0;
     text-align: center;
     font-weight: normal;
