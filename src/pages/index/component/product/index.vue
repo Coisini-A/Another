@@ -1,28 +1,22 @@
 <template>
-  <div>
-      <h1 class="product-title">送恋人/爱情鲜花</h1>
-      <product-list></product-list>
-  </div>
+    <div>
+        <product></product>
+        <product></product>
+    </div>
 </template>
-
+    
 <script>
-import ProductList from "./product-list";
+import Product from "./product"; 
 export default {
   name: "index",
-  components:{
-    "product-list":ProductList
+    components:{
+    product:Product
   },
-  data(){
-    return{};
+    data(){
+        return{};
   }
 };
 </script>
 
 <style lang="less" scoped>
-.product-title {
-    font-size:32px;
-    padding:30px 0;
-    text-align: center;
-    font-weight: normal;
-}
 </style>
