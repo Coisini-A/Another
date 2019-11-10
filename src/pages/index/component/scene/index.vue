@@ -30,6 +30,9 @@ export default {
 </script>
 
 <style lang="less" scoped>
+.scene{
+  background-color: white;
+}
 .scene-list {
   display: flex;
   margin-top: 16px;

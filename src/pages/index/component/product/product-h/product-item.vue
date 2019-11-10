@@ -12,7 +12,7 @@
             <div class="hot" v-if="item.isHot">畅销爆款</div>
             <div class="product-item-info-promo" v-text="item.promo"></div>
           </div>
-          <item-info-bottom :ProductList="item"></item-info-bottom>
+          <item-info-bottom :type="'h'" :ProductList="item"></item-info-bottom>
         </div>
       </a>
     </div>
@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import ItemInfoBottom from "./item-info-bottom";
+import ItemInfoBottom from "./../item-info-bottom";
 export default {
-  name: "product-list",
+  name: "product-item",
   components: {
     "item-info-bottom": ItemInfoBottom
   },

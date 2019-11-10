@@ -1,21 +1,25 @@
 <template>
   <div>
-    <h1 class="product-title">送恋人/爱情鲜花</h1>
-    <product-list :product="product"></product-list>
+    <h1 class="product-title" v-text="title"></h1>
+    <product-item :product="product"></product-item>
     <p class="more">查看更多</p>
   </div>
 </template>
-
+    
 <script>
-import ProductList from "./product-list";
+import ProductItem from "./product-item";
 export default {
-  name: "product",
+  name: "index",
   components: {
-    "product-list": ProductList
+    "product-item": ProductItem
   },
   props: {
     product: {
       type: Array,
+      required: true
+    },
+    title: {
+      type: String,
       required: true
     }
   },
@@ -24,8 +28,14 @@ export default {
   }
 };
 </script>
+  
 
 <style lang="less" scoped>
+div{
+  background-color:white ;
+  margin-top: 16px;
+  padding-bottom: 40px;
+}
 .product-title {
   font-size: 32px;
   padding: 30px 0;
@@ -39,6 +49,7 @@ export default {
   height: 52px;
   text-align: center;
   line-height: 52px;
-  margin: 50px auto;
+  margin:0 auto;
+  padding-bottom:50px;
 }
 </style>

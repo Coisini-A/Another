@@ -38,6 +38,7 @@ export default {
 <style lang="less" scoped>
 .honor-container {
   font-size: 24px;
+  background-color: white;
   height: 72px;
   padding: 0 10px;
   display: flex;

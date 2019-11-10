@@ -41,6 +41,7 @@ export default {
 
 <style lang="less" scoped>
 .procate-container {
+  background-color: white;
   display: flex;
   justify-content: space-around;
   height: 136px;
