@@ -16,7 +16,12 @@ export default {
 
 <style lang="less" scoped>
 .headerbar {
-  border-bottom: 4px solid #F1F3F6;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color:white;
+  border-bottom: 4px solid #f1f3f6;
   .headerbar-content {
     display: flex;
     background-color: #f3f5f7;

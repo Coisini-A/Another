@@ -1,60 +1,65 @@
 <template>
-<div>
-    <aside class="dada">
-    <ul class="catebox-menu">
-     <li :key="i" v-for="(q,i) in CataBoxList">{{q.text}}</li>
-    </ul>
-    <catebox-right></catebox-right>
-  </aside>
-</div>
-  
+  <div class="catebox-menu-list">
+    <div
+      :class="['catebox-menu-item',index===currentIndex ?'focus':'']"
+      :key="index"
+      v-for="(item,index) in left"
+      @click="classifyChange(index)"
+    >{{item.text}}</div>
+  </div>
 </template>
 
 <script>
-import CataBoxRight from "./catebox-right"
 export default {
   name: "catebox-left",
-  computed:{
-      "catebox-right":CataBoxRight
+  props: {
+    left: {
+      type: Array,
+      required: true
+    }
   },
-  data(){
-      return{
-          CataBoxList:[
-              {
-                  text:"热门推荐"
-              },
-              {
-                  text:"热门推荐"
-              },
-              {
-                  text:"热门推荐"
-              },
-              {
-                  text:"热门推荐"
-              },
-              {
-                  text:"热门推荐"
-              },
-          ]
-      }
+  data() {
+    return {
+      currentIndex: 0
+    };
+  },
+  methods: {
+    classifyChange(index) {
+      if (this.currentIndex === index) return;
+      this.currentIndex = index;
+      this.$emit('classifyChange',index);
+    }
   }
 };
 </script>
 
 <style lang="less" scoped>
-.catebox-menu {
-    position: absolute;
-    top:90px;
-    left: 0;
-    bottom: 0;
-    z-index: 2;
-    width: 21.06666667%;
-    border-right: 1px solid #E9ECF0;
-    transform: translate3d(0, 0, 0);
-    overflow-x: hidden;
-    overflow-y: auto;
-}
-.dada{
-    display: flex;
+.catebox-menu-list {
+  top: 90px;
+  float: left;
+  width: 20%;
+  border-right: 1px solid #e9ecf0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .catebox-menu-item {
+    position: relative;;
+    height: 112px;
+    line-height: 112px;
+    text-align: center;
+    font-size: 28px;
+    &.focus {
+      color: #ff734c;
+      &::after {
+        content: "";
+        width: 4px;
+        height: 50%;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        background: #ff734c;
+        transform: translateY(-50%);
+      }
+    }
+  }
 }
 </style>
