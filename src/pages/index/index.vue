@@ -8,7 +8,7 @@
     <product></product>
     <index-pic></index-pic>
     <brand-list></brand-list>
-    <my-footer></my-footer>
+    <!-- <my-footer></my-footer> -->
   </div>
 </template>
 

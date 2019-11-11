@@ -76,6 +76,13 @@
       "unicode_decimal": 60462
     },
     {
+      "icon_id": "9637451",
+      "name": "fangdajing",
+      "font_class": "fangdajing",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
       "icon_id": "9810493",
       "name": "首页",
       "font_class": "shouye",

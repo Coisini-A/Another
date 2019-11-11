@@ -21,24 +21,24 @@ export default {
           text: "获评鲜花龙头企业"
         },
         {
-          img: "https://img02.hua.com/m/pro_detail/m_details_brand_01.png",
-          text: "获评鲜花龙头企业"
+          img: "https://img02.hua.com/m/pro_detail/m_details_brand_02.png",
+          text: "1~3小时送花上门"
         },
         {
-          img: "https://img02.hua.com/m/pro_detail/m_details_brand_01.png",
-          text: "获评鲜花龙头企业"
+          img: "https://img02.hua.com/m/pro_detail/m_details_brand_03.png",
+          text: "赛事冠军花艺师团队"
         },
         {
-          img: "https://img02.hua.com/m/pro_detail/m_details_brand_01.png",
-          text: "获评鲜花龙头企业"
+          img: "https://img02.hua.com/m/pro_detail/m_details_brand_04.png",
+          text: "严选花材"
         },
         {
-          img: "https://img02.hua.com/m/pro_detail/m_details_brand_01.png",
-          text: "获评鲜花龙头企业"
+          img: "https://img02.hua.com/m/pro_detail/m_details_brand_05.png",
+          text: "12道严苛品控标准"
         },
         {
-          img: "https://img02.hua.com/m/pro_detail/m_details_brand_01.png",
-          text: "获评鲜花龙头企业"
+          img: "https://img02.hua.com/m/pro_detail/m_details_brand_06.png",
+          text: "500万用户信赖好评"
         }
       ]
     };
