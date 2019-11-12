@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     classifyChange(index) {
-      if (this.currentIndex === index) return;
+      if (this.currentIndex === index) return ;
       this.currentIndex = index;
       this.$emit('classifyChange',index);
     }
