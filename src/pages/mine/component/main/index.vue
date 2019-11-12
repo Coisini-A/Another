@@ -27,7 +27,7 @@ userinfor:Userinfor,
 .main {
   width: 100%;
   height: 600px;
-  background-image: url(./../../../assets/img/index/bg-img/backgroundv3.png);
+  background-image: url(./../../../../assets/img/index/bg-img/backgroundv3.png);
   background-size: 100%;
   background-repeat: no-repeat;
 }

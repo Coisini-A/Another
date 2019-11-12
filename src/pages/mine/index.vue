@@ -1,50 +1,115 @@
 <template>
-<div>
-  <header class="headerbar">
-    <div class="headerbar-left">
-      <div class="iconfont">&#xe617;</div>
-    </div>
-    <p class="headerbar-center">个人中心</p>
-    <div class="headerbar-right"></div>
-  </header>
-  <mymain></mymain>
-</div>
+  <div>
+    <header class="headerbar">
+      <div class="headerbar-left">
+        <div class="iconfont">&#xe617;</div>
+      </div>
+      <p class="headerbar-center">个人中心</p>
+      <div class="headerbar-right"></div>
+    </header>
+    <mymain></mymain>
+    <linkbox :linkboxList="asset"></linkbox>
+    <linkbox :linkboxList="service"></linkbox>
+  </div>
 </template>
 
 <script>
-import Main from "./main";
+import Main from "./component/main";
+import Linkbox from "./component/linkbox";
 export default {
   name: "index",
-  components:{
-    mymain:Main,
+  components: {
+    mymain: Main,
+    linkbox: Linkbox
+  },
+  data() {
+    return {
+      asset: [
+        [
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          }
+        ],
+        [
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          }
+        ]
+      ],
+      service: [
+        [
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          },
+          {
+            text: "",
+            icon: ""
+          }
+        ]
+      ]
+    };
   }
 };
 </script>
 
 <style lang="less" scoped>
-.headerbar{
+.headerbar {
   height: 88px;
   display: flex;
-  .headerbar-left{
+  .headerbar-left {
     width: 176px;
     height: 100%;
-    >div{
+    > div {
       width: 88px;
       text-align: center;
-      font-size:54px;
+      font-size: 54px;
       line-height: 88px;
     }
   }
-  .headerbar-center{
-    width:398px;
+  .headerbar-center {
+    width: 398px;
     text-align: center;
-    font-size:32px;
+    font-size: 32px;
     line-height: 88px;
   }
-  .headerbar-right{
+  .headerbar-right {
     width: 176px;
     height: 100%;
   }
 }
-
 </style>
